@@ -40,19 +40,19 @@ pip install pillow numpy scipy
 #### Basic Usage
 ```bash
 # Basic padding with auto-set parameters
-python alpha_padder.py image.png
+python pad_alpha.py image.png
 
 # Specify custom output file
-python alpha_padder.py image.png -o padded_result.tga
+python pad_alpha.py image.png -o padded_result.tga
 
 # Custom parameters
-python alpha_padder.py image.png -r 5 -s 2.0
+python pad_alpha.py image.png -r 5 -s 2.0
 
 # UV island mode with mask
-python alpha_padder.py texture.png -m island_mask.png
+python pad_alpha.py texture.png -m island_mask.png
 
 # Verbose output to see processing details
-python alpha_padder.py image.png --auto -v
+python pad_alpha.py image.png --auto -v
 ```
 
 #### Command-Line Options
@@ -78,16 +78,16 @@ options:
 #### Examples
 ```bash
 # Process a game sprite with auto parameters
-python alpha_padder.py character_sprite.png --auto -v
+python pad_alpha.py character_sprite.png --auto -v
 
 # Batch process with specific settings
-python alpha_padder.py ui_element.png -r 4 -s 1.5 -o assets/ui_element_padded.tga
+python pad_alpha.py ui_element.png -r 4 -s 1.5 -o assets/ui_element_padded.tga
 
 # UV texture with island mask
-python alpha_padder.py character_diffuse.png -m character_uv_mask.png -o character_diffuse_padded.tga
+python pad_alpha.py character_diffuse.png -m character_uv_mask.png -o character_diffuse_padded.tga
 
 # Quick processing with minimal blur
-python alpha_padder.py icon.png -r 2 -s 0.5
+python pad_alpha.py icon.png -r 2 -s 0.5
 ```
 
 #### Integration with Build Scripts
@@ -97,11 +97,11 @@ The command-line version is perfect for integration into asset processing pipeli
 # Bash script example
 for file in textures/*.png; do
     echo "Processing $file..."
-    python alpha_padder.py "$file" --auto
+    python pad_alpha.py "$file" --auto
 done
 
 # Process with specific naming convention
-python alpha_padder.py raw/texture.png -o processed/texture_game_ready.tga
+python pad_alpha.py raw/texture.png -o processed/texture_game_ready.tga
 ```
 
 ## Output
