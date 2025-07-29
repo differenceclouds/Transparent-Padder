@@ -4,6 +4,9 @@
 
 Contains a tool to correctly pad a transparent texture for use in game engines 
 Transparent textures sometimes have garbage unrelated RGB values in the areas that transparent. In game engines this can lead to visual artifacts wherever the shader has to sample and average based on neighboring pixels of a opaque pixel. An example is mips. The code here takes a png with transparency and generates a TGA with actual alpha, where the RGB values surrounding the opaque pixels are correctly padded. You can also use it to generally pad between UV islands of a normal texture. The texture is saved next to whatever image you provided.
+
+It is also useful when linearly interpolating textures in a 2D context. 
+
 Note: The larger the image, the longer it takes, give it time.
 
 You can read more here: https://medium.com/@shahriyarshahrabi/padding-transparent-textures-fir-mips-and-game-engines-c71c085142fe
