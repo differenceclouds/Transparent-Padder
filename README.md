@@ -18,14 +18,6 @@ To get the .exe, go here (was made with pyinstaller): https://github.com/IRCSS/T
 
 This tool is available in two versions:
 
-### GUI Version (Original)
-Interactive desktop application with visual preview and parameter adjustment.
-- Load images through file dialog
-- Preview original and padded images side-by-side
-- Adjust parameters with real-time tooltips
-- Auto-parameter setting based on image resolution
-- Support for UV island masking
-
 To run the GUI version:
 ```bash
 python pad_alpha_gui.py
