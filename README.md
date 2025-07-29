@@ -1,4 +1,4 @@
-***DISCLOSURE:*** The original gui application this was forked from was made into a command-line utility with Claude Sonnet 4, along with the bulk of this documentation. Default output and PNG output have been tested (`python pad_alpha.py input.png -o output.png`)
+***DISCLOSURE:*** The original gui application this was forked from was made into a command-line utility with Claude Sonnet 4, along with the bulk of this documentation. Default output (TGA) and PNG output have been tested (`python pad_alpha.py input.png -o output.png`)
 
 # Transparent-Padder
 
