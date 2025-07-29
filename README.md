@@ -13,6 +13,7 @@ You can read more here: https://medium.com/@shahriyarshahrabi/padding-transparen
 
 To get the .exe, go here (was made with pyinstaller): https://github.com/IRCSS/Transparent-Padder/releases/tag/v1
 ![cover](documentation/cover.jpg "Padding Transparency")
+![cover](documentation/comparison.png "Padding Transparency")
 
 ## Usage Options
 
